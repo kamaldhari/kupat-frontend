@@ -1,0 +1,140 @@
+section.no-padding {
+    padding: 0;
+}
+
+.kpt-vdo-img-wrap .img-wrapper {
+    padding-top: 52.223%;
+}
+
+.kpt-sub-banner-inner {
+    position: relative;
+}
+
+.banner-info-wrap {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 127px;
+    padding-inline: 16px;
+}
+
+.inner-info-wrap {
+    max-width: 453px;
+    width: 100%;
+    text-align: center;
+}
+
+.title-wrap {
+    display: flex;
+}
+
+.title-wrap img {
+    height: 45px;
+    object-fit: contain;
+}
+
+.sub-info p {
+    color: var(--bright);
+    font-size: 18px;
+}
+
+.kpt-social-links .social-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.kpt-social-links .social-link a {
+    display: flex;
+    transition: all 0.5s ease;
+    width: 24px;
+    height: 24px;
+}
+
+.kpt-social-links .social-link li + * {
+    margin-right: 16px;
+}
+
+.inner-info-wrap > * + * {
+    margin-top: 16px;
+}
+.container.semi-container {
+    max-width: 1112px;
+}
+.semi-container .inner-wrap {
+    max-width: 1048px;
+    margin-inline: auto;
+    padding-inline: 24px;
+}
+section.benifitsSec {
+    padding-top: 8px;
+}
+.external_link_box:last-child {
+    margin-bottom: 0;
+    border: none;
+}
+
+.gallery-sec {
+    padding-bottom: 0;
+}
+
+.venu-container .kpt_artist_info_box {
+    padding: 48px 32px;
+}
+.ticket-sec > * + * {
+    margin-top: 16px;
+}
+.venu-container .ticket-sec {
+    padding-bottom: 56px;
+}
+.venu-container .sec-title {
+    margin-top: 0;
+}
+.venu-container .title-wrap h1 {
+    color: var(--bright);
+}
+
+@media screen and (max-width: 1439px) {
+    .title-wrap img {
+        height: 32px;
+    }
+
+    .sub-info p {
+        font-size: 16px;
+    }
+
+    .banner-info-wrap {
+        padding-top: 110px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .venu-container .ticket-sec {
+        padding-bottom: 24px;
+    }
+    .kpt-vdo-img-wrap .img-wrapper {
+        min-height: calc(100dvh - 41px);
+    }
+    .semi-container .inner-wrap {
+        padding-inline: 16px;
+    }
+    .news-info-sec .container {
+        padding: 0;
+    }
+    .venu-container .kpt_artist_info_box {
+        padding: 32px 24px;
+    }
+    section.kpt-sub-banner.no-padding {
+        padding-top: 81px;
+        background-color: var(--dark);
+    }
+    .banner-info-wrap {
+        padding-top: 0;
+    }
+}

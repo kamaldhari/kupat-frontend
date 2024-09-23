@@ -1,0 +1,43 @@
+.shows-time-row {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: auto;
+	padding: 28px 0;
+}
+
+.show-double-time {
+	padding: 0 18px;
+}
+.show-double-time:first-child{
+	padding-right: 0;
+}
+
+.kpt_artist_info_box {
+	border: 1px solid var(--unavailableGray);
+	background-color: #feffef;
+	padding: 40px 0;
+}
+
+.kpt_artist_info_box p {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+
+@media screen and (max-width: 1439px) {
+	.kpt_artist_info_box {
+		padding: 32px;
+	}
+	.kpt_artist_info_box p {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.kpt_artist_info_box {
+		padding: 32px 24px;
+		border-left: none;
+		border-right: none;
+	}
+	
+}

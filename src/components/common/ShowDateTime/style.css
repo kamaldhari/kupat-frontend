@@ -1,0 +1,98 @@
+.nav .nav-link {
+    color: var(--unavailableGray);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--basefont);
+    transition: all 0.5s ease;
+    background-color: var(--bright);
+    border: none;
+    padding-right: 0;
+    cursor: pointer;
+}
+
+.nav .nav-link:hover {
+    color: var(--purple);
+}
+
+.show-name-tab .swiper-slide.active .nav .nav-link {
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.show-name-tab .show-info {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 14px;
+    width: auto;
+    text-align: center;
+}
+
+.show-info p {
+    color: var(--unavailableGray);
+    transition: all 0.3s ease;
+}
+
+.show-name-tab .swiper-slide-active .show-info p {
+    color: var(--dark);
+}
+
+.show-name-tab .show-time {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.show-name-tab {
+    margin-top: 42px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.show-name-tab .swiper {
+    width: 100%;
+}
+
+.show-name-tab::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 39px;
+    height: 100%;
+    background-image: linear-gradient(65deg, #fff, transparent 60%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.card_carousel_section .swiper {
+    overflow: visible;
+}
+
+.show-name-tab .swiper-slide:not(.active) span {
+    animation: transformHideAnim 0.9s ease;
+    position: relative;
+}
+
+.show-name-tab .swiper-slide.active span {
+    animation: transformShowAnim 0.9s ease;
+    position: relative;
+}
+
+.kpt_feature_info_box .show-name-tab {
+    margin-top: 0;
+}
+
+.swiper.show-DayTimeSwiper {
+    padding-left: calc(100% - 140px);
+}
+
+.swiper.show-DayTimeSwiper .swiper-slide {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .show-name-tab .show-time {
+        font-size: 24px;
+    }
+}

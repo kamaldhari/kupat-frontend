@@ -1,0 +1,207 @@
+.ticket-sec {
+    padding-bottom: 40px;
+}
+
+.kpt-hero-banner {
+    background-color: var(--dark);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.kpt-hero-banner h1 {
+    text-align: center;
+}
+
+.kpt-hero-banner .kpt-inner-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.kpt-hero-banner .kpt-vdo-col {
+    width: 100%;
+    max-width: 74.348%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.kpt-vdo-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 75.327%;
+}
+
+.kpt-vdo-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--dark), transparent);
+    z-index: 1;
+}
+
+.kpt-vdo-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 23%;
+    height: 100%;
+    background-image: linear-gradient(to left, var(--dark), transparent);
+    z-index: 1;
+}
+
+.kpt-vdo-wrapper img,
+.kpt-vdo-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 751px;
+    object-fit: cover;
+}
+
+.kpt-inner-info-col {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kpt-hero-banner .kpt-info-col {
+    width: 100%;
+    max-width: 28.71%;
+    margin-left: -3.058%;
+    position: relative;
+    z-index: 2;
+}
+
+.kpt-inner-info-col > * {
+    margin-bottom: 15px;
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.kpt-banner-title {
+    display: flex;
+    width: 100%;
+}
+
+.kpt-banner-info .kpt-date {
+    color: var(--bright);
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+}
+
+.kpt-banner-info p {
+    font-size: 24px;
+    color: var(--bright);
+    font-weight: 400;
+    padding-inline: 10%;
+}
+
+.card_carousel_section .cta_btn.btn-dark {
+    width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .kpt-banner-info .kpt-date {
+        font-size: 16px;
+    }
+
+    .kpt-banner-info p {
+        font-size: 18px;
+    }
+
+    .kpt-hero-banner {
+        padding-bottom: 28px;
+    }
+
+    .kpt-hero-banner .kpt-vdo-col {
+        max-width: 100%;
+    }
+
+    .kpt-hero-banner .kpt-info-col {
+        max-width: 100%;
+        margin-left: 0;
+        order: 2;
+        padding-inline: 16px;
+    }
+
+    .kpt-vdo-wrapper::before {
+        top: unset;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background-image: linear-gradient(to top, var(--dark), transparent);
+    }
+
+    .kpt-vdo-wrapper::after {
+        display: none;
+    }
+
+    .kpt-hero-banner .container {
+        padding: 0;
+    }
+
+    .kpt-banner-title {
+        justify-content: center;
+    }
+
+    .kpt-inner-info-col > * {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .kpt-inner-info-col > * {
+        max-width: 100%;
+    }
+
+    .kpt-hero-banner {
+        padding-top: 81px;
+        overflow: hidden;
+    }
+
+    .kpt-vdo-wrapper::after {
+        display: block;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        background-image: linear-gradient(to bottom, var(--dark), transparent);
+    }
+
+    .kpt-vdo-wrapper {
+        padding-top: 99.327%;
+    }
+
+    .kpt-banner-title {
+        max-width: 280px;
+    }
+
+    .kpt-banner-info .kpt-date {
+        font-size: 14px;
+    }
+
+    .kpt-banner-info p {
+        font-size: 14px;
+    }
+
+    .kpt-hero-banner .kpt-vdo-col {
+        transform: translateY(30px);
+    }
+
+    .kpt-hero-banner .kpt-info-col {
+        min-height: 200px;
+    }
+}

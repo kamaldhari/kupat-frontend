@@ -1,0 +1,173 @@
+.form-inner-info {
+    width: 100%;
+    text-align: center;
+    max-width: 42.778%;
+    z-index: 1;
+}
+
+section.outline-cta-section {
+    padding-top: 0;
+    padding-bottom: 16px;
+}
+
+section.outline-cta-section .outline-box-wrap {
+    padding-top: 43px;
+    padding-bottom: 43px;
+    background-image: unset;
+    padding-inline: 56px;
+    position: relative;
+}
+.outline-cta-section .outline-box-inner .image_box_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+.outline-cta-section .image_box_wrap .img-wrapper {
+    padding-top: unset;
+    height: 100%;
+}
+.outline-cta-section .outline-box-wrap img {
+    filter: unset;
+    object-fit: fill;
+}
+
+.outline-cta-section .input-field-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 262px;
+    margin-inline: auto;
+    margin-bottom: 16px;
+    padding: 12px 24px;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.outline-cta-section .input-field {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.separator.doodle {
+    font-size: 18px;
+    color: var(--unavailableGray);
+    font-weight: 400;
+    line-height: 120%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.outline-cta-section .outline-box-wrap .txt_content {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 991px) {
+    section.outline-cta-section .outline-box-wrap {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-inline: 24px;
+    }
+    .outline-cta-section .outline-box-wrap .txt_content {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .outline-cta-section .input-field-wrapper {
+        padding: 0;
+        flex-direction: row;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .outline-cta-section .input-field {
+        width: calc(50% - 24px);
+        margin-bottom: 0;
+    }
+    .separator.doodle {
+        font-size: 14px;
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        min-width: 48px;
+    }
+    .form-inner-info {
+        max-width: 100%;
+        padding-top: 32px;
+        padding-bottom: 24px;
+        padding-inline: 24px;
+        border: 2px dashed var(--unavailableGray);
+        border-top: none;
+        border-radius: 0 0 20px 20px;
+    }
+    section.outline-cta-section .outline-box-wrap {
+        flex-direction: column-reverse;
+        padding: 0;
+        border: none;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .outline-cta-section .outline-box-inner .circle-doodle {
+        display: none;
+    }
+    .outline-cta-section .outline-box-inner .image_box_wrap {
+        position: relative;
+        top: unset;
+        left: unset;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+    .outline-cta-section .image_box_wrap .img-wrapper {
+        padding-top: 126.945%;
+        height: auto;
+    }
+    .outline-cta-section .img-wrapper .img-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    .outline-cta-section .image_box_wrap .img-wrapper::before {
+        content: "";
+        position: absolute;
+        bottom: -24px;
+        left: -24px;
+        width: 48px;
+        height: 48px;
+        border: 2px dashed var(--unavailableGray);
+        background-color: var(--bright);
+        z-index: 3;
+        border-radius: 50%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        transform: rotate(-45deg);
+    }
+    .outline-cta-section .image_box_wrap .img-wrapper::after {
+        content: "";
+        position: absolute;
+        bottom: -24px;
+        right: -24px;
+        width: 48px;
+        height: 48px;
+        border: 2px dashed var(--unavailableGray);
+        background-color: var(--bright);
+        z-index: 3;
+        border-radius: 50%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        transform: rotate(-45deg);
+    }
+    .outline-cta-section .outline-box-wrap .txt_content {
+        text-align: right;
+    }
+}

@@ -1,0 +1,146 @@
+.search-data .artist-info {
+    display: flex;
+    align-items: center;
+    max-width: 220px;
+    width: 100%;
+}
+
+.search-data .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-bottom: 1px solid #a5a5a510;
+    transition: all 0.5s cubic-bezier(0.52, 0.62, 0.25, 1);
+    flex-wrap: wrap;
+}
+
+.search-data .list-item-wrap {
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.search-data .list-item:active {
+    transform: scale(0.9);
+}
+
+.search-data .artist-img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 32px;
+}
+
+.artist-data h3 {
+    line-height: 100%;
+    color: var(--dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.artist-data {
+    width: calc(100% - 112px);
+}
+.artist-data p {
+    font-size: 12px;
+    color: var(--unavailableGray);
+    font-weight: 500;
+}
+
+.artist-date ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.artist-date ul li {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #a5a5a510;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.artist-date ul li.active {
+    border: 1px solid #a5a5a5;
+}
+
+.artist-date ul li + * {
+    margin-right: 8px;
+}
+
+.artist-date ul li p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--unavailableGray);
+}
+.artist-date ul li strong {
+    color: var(--unavailableGray);
+}
+.artist-date ul li.active strong,
+.artist-date ul li.active p {
+    color: var(--dark);
+}
+
+.list-arrow div {
+    display: flex;
+    width: 16px;
+    height: 16px;
+}
+.list-arrow {
+    width: 16px;
+    height: 16px;
+}
+
+.artist-date {
+    width: calc(100% - 220px - 16px);
+    padding-inline: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .search-left-col .kpt-whatsapp {
+        display: none;
+    }
+
+    .search-data .artist-img {
+        width: 40px;
+        height: 40px;
+        margin-left: 24px;
+    }
+    .artist-data h3 {
+        font-size: 16px;
+    }
+    .artist-data p {
+        font-size: 9px;
+    }
+    .artist-date ul li {
+        width: 32px;
+        height: 32px;
+        border-radius: 5px;
+        line-height: 70%;
+    }
+    .artist-date ul li strong,
+    .artist-date ul li p {
+        font-size: 12px;
+    }
+    .search-data .list-item {
+        padding: 16px 0;
+    }
+    .search-data .artist-info {
+        max-width: 160px;
+    }
+    .artist-date {
+        width: calc(100% - 160px - 16px);
+    }
+}

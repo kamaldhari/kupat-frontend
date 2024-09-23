@@ -1,0 +1,324 @@
+.comm-slider-sec {
+    overflow: hidden;
+    padding-bottom: 0;
+    padding-top: 62px;
+}
+
+.comm-slider-sec .swiper {
+    overflow: visible;
+}
+
+.comm-slider-sec .container {
+    max-width: 1056px;
+}
+
+.comm-slider-wrapper .swiper-wrapper {
+    align-items: stretch;
+}
+
+.comm-slider-sec .comm-slider-wrapper {
+    margin-inline: -8px;
+    margin-top: -50px;
+    pointer-events: none;
+}
+
+.comm-slider-sec .swiper-slide * {
+    pointer-events: all;
+}
+
+.comm-slider-sec .img-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    border: 1px solid var(--unavailableGray);
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.comm-slider-sec .img-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--bright);
+    border: 1px solid var(--unavailableGray);
+    border-radius: 50%;
+}
+
+.comm-slider-sec .img-wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: -12px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    z-index: 1;
+    border-radius: 50%;
+    border: 1px solid var(--unavailableGray);
+}
+
+.comm-slider-sec .img-wrapper .img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.comm-slider-sec .img-wrapper .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.comm-slider-sec .swiper-slide {
+    border-bottom: 1px solid var(--unavailableGray);
+    padding-inline: 8px;
+    height: auto;
+}
+
+.comm-slider-sec .card-body {
+    border: 1px solid var(--unavailableGray);
+    border-top: none;
+    padding: 20px 12px 16px;
+    border-bottom: transparent;
+    height: 100%;
+    min-height: 106px;
+}
+
+.comm-slider-sec .artist-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.comm-slider-sec .artist-info span {
+    display: block;
+    line-height: 120%;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.comm-slider-sec .artist-datedayhour {
+    color: var(--unavailableGray);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sec-title h2 strong {
+    font-weight: bold;
+    font-family: var(--basefont);
+    margin-left: 20px;
+}
+
+.yellow-txt {
+    color: var(--warning);
+}
+
+.purple-txt {
+    color: var(--purple);
+}
+
+.comm-slider-sec .card-body h3 {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+}
+
+.comm-slider-sec .carousel__item {
+    width: 100%;
+    transform: translateY(50px);
+    height: 100%;
+}
+
+.comm-slider-sec .item-card:hover {
+    transform: translateY(-50px);
+}
+
+.comm-slider-sec .sec-title {
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.comm-slider-sec .sec-title h2 {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.comm-slider-sec .sec-title h2:hover {
+    color: var(--unavailableGray);
+}
+.comm-slider-sec .item-card {
+    border-bottom: transparent;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.sec-title .icon {
+    width: 12px;
+    display: inline-block;
+}
+/* END COMMON SLIDER CODE */
+
+/* START MODAL DESIGN CODE */
+.ant-modal.slider-modal {
+    max-width: calc(100% - 34px);
+}
+.slider-modal.ant-modal-root .ant-modal-mask {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.slider-modal.ant-modal .ant-modal-content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0;
+}
+.slider-modal.ant-modal .ant-modal-close svg {
+    font-size: 12px;
+}
+.slider-modal.ant-modal .ant-modal-close {
+    right: 24px;
+    top: 24px;
+    width: 12px;
+    height: 12px;
+    color: var(--dark);
+    transition: all 0.5s ease;
+}
+.slider-modal.ant-modal .ant-modal-close:hover {
+    color: var(--kupatblue);
+}
+.slider-modal .modal-container .modal-txt {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    font-weight: 400;
+    line-height: 140%;
+    font-family: var(--basefont);
+}
+.slider-modal .modal-body {
+    padding: 32px 32px 20px 32px;
+}
+.slider-modal .modal-footer {
+    border-top: 1px solid var(--dark);
+    padding: 20px;
+    text-align: center;
+}
+.slider-modal .modal-footer a {
+    font-weight: bold;
+    font-size: 28px;
+    display: inline-flex;
+    line-height: 80%;
+    align-items: center;
+}
+.slider-modal .modal-footer a:hover {
+    color: var(--kupatblue);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+}
+.logo img {
+    height: 35px;
+    object-fit: contain;
+}
+.modal-footer a .icon svg {
+    width: 16px;
+    height: 16px;
+}
+.modal-footer a path {
+    transition: all 0.3s ease;
+}
+.modal-footer a:hover path {
+    stroke: var(--kupatblue);
+}
+.modal-footer a .icon {
+    display: flex;
+    margin-right: 8px;
+}
+/* END MODAL DESIGN CODE */
+
+@media screen and (max-width: 1439px) {
+    .comm-slider-sec .card-body {
+        padding: 14px 12px;
+        min-height: 95px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .comm-slider-sec {
+        padding-top: 32px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cta_btn {
+        font-size: 16px;
+        padding: 5px 20px;
+        min-width: 127px;
+    }
+    .comm-slider-sec .card-body {
+        padding: 16px 12px 16px;
+        min-height: auto;
+    }
+
+    .comm-slider-sec .comm-slider-wrapper {
+        margin-top: 0;
+    }
+
+    .comm-slider-sec .item-card:hover {
+        transform: unset;
+    }
+
+    .comm-slider-sec .carousel__item {
+        transform: unset;
+    }
+
+    .comm-slider-sec .swiper-slide {
+        border-bottom: none;
+    }
+
+    .comm-slider-sec .item-card {
+        border-bottom: 1px solid var(--unavailableGray);
+        border-radius: 8px;
+        margin-top: -1px;
+    }
+
+    .comm-slider-sec {
+        padding-top: 32px;
+    }
+
+    .comm-slider-sec .artist-info,
+    .comm-slider-sec .card-body h3 {
+        transition: all 0.5s ease;
+    }
+
+    .comm-slider-sec .swiper {
+        padding-left: 7%;
+    }
+    .sec-title h2 strong {
+        margin-left: 8px;
+    }
+    .sec-title .icon,
+    .sec-title svg {
+        width: 8px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    .comm-slider-sec .swiper {
+        padding-left: 42%;
+    }
+    .cta_btn {
+        font-size: 14px;
+    }
+}

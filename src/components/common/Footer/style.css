@@ -1,0 +1,184 @@
+footer {
+    border-top: 1px solid var(--unavailableGray);
+    margin-top: 80px;
+    padding: 95px 0;
+}
+
+footer .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 983px;
+    margin-inline: auto;
+}
+
+footer .social-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .social-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .social-link > * {
+    margin-right: 32px;
+}
+
+footer .social-logo a {
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+.service-address > * {
+    display: flex;
+    align-items: center;
+}
+
+.service-address strong {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.service-address p,
+.service-address strong {
+    color: var(--dark);
+}
+
+footer a {
+    color: var(--dark);
+    transition: all 0.5s ease;
+}
+
+footer a:hover {
+    color: var(--kupatblue);
+}
+
+.footer-pages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-pages a {
+    display: inline-block;
+    padding-right: 66px;
+    position: relative;
+}
+
+.footer-pages a:first-child::after {
+    display: none;
+}
+
+.footer-pages a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--unavailableGray);
+    right: 30px;
+}
+
+.address-box P,
+.service-box a {
+    direction: ltr;
+    display: inline-block;
+    font-weight: 300;
+}
+address {
+    font-style: normal;
+}
+/* END FOOTER CODE */
+
+@media screen and (max-width: 991px) {
+    footer {
+        margin-top: 64px;
+        padding: 46px 0;
+    }
+
+    footer .inner-wrap {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    footer .inner-wrap > * + * {
+        margin-top: 24px;
+    }
+
+    footer .social-link {
+        margin-top: 24px;
+    }
+
+    footer .social-logo {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .social-link > * {
+        margin-inline: 16px;
+    }
+
+    .footer-pages a {
+        padding-inline: 33px;
+    }
+
+    .footer-pages a::after {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        margin-top: 24px;
+    }
+
+    .footer-pages a {
+        padding-inline: 17px;
+    }
+
+    footer .inner-wrap > * + * {
+        margin-top: 32px;
+    }
+
+    .service-address strong {
+        font-size: 14px;
+    }
+
+    footer .service-address {
+        padding: 35px 0;
+        position: relative;
+    }
+
+    footer .service-address::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 100px;
+        height: 1px;
+        background-color: var(--unavailableGray);
+        transform: translateX(-50%);
+    }
+
+    footer .service-address::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 100px;
+        height: 1px;
+        background-color: var(--unavailableGray);
+        transform: translateX(-50%);
+    }
+}

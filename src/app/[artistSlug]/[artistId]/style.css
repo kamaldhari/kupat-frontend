@@ -1,0 +1,21 @@
+.artist-show-sec .container {
+	max-width: 1076px;
+}
+.kpt_feature_wrap .show-name-tab .show-DayTimeSwiper.swiper {
+	padding-left: calc(100% - 140px);
+	padding-right: 0;
+}
+.kpt_feature_wrap .show-nameSwiper.swiper .swiper-slide {
+	width: auto;
+}
+.kpt_feature_wrap .show-nameSwiper.swiper {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+@media screen and (max-width: 767px) {
+	.kpt_feature_wrap .show-name-tab .show-DayTimeSwiper.swiper {
+		padding-left: calc(100% - 100px);
+	}
+}

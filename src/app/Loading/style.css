@@ -1,0 +1,27 @@
+.cls-1,
+.cls-3 {
+    fill: #fff;
+}
+
+.cls-1,
+.cls-2,
+.cls-3 {
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+
+.cls-1 {
+    stroke-width: 0.15px;
+}
+
+.cls-2 {
+    fill: none;
+}
+
+.cls-2,
+.cls-3 {
+    stroke-width: 6px;
+}
+#loader-wrap {
+    display: none;
+}
